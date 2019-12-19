@@ -97,8 +97,8 @@ pipeline {
 				// Create a relative working directory and setup our
 				// data environment.
 				dir('./ontology-repository-workspace') {
-					git branch: TARGET_ONTOLOGY_BRANCH,
-						url: TARGET_ONTOLOGY_URL
+					git branch: 'mo-odk',
+						url: 'https://github.com/monarch-initiative/monarch-ontology.git'
 
 					// Default namespace.
 					// sh 'OBO=http://purl.obolibrary.org/obo'
