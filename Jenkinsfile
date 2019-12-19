@@ -90,7 +90,8 @@ pipeline {
 					image 'obolibrary/odkfull:latest'
 					// Reset Jenkins Docker agent default to original
 					// root.
-					args '-u root:root'
+					//args '-u root:root'
+					args '-v /var/run/docker.sock:/var/run/docker.sock'
 				}
 			}
 			steps {
